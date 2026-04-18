@@ -12,6 +12,19 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+	<style>
+    /* Fix for mobile background zoom */
+    #intro {
+        background-attachment: scroll !important;
+    }
+
+    /* Re-enables the nice parallax effect only for computers */
+    @media screen and (min-width: 981px) {
+        #intro {
+            background-attachment: fixed !important;
+        }
+    }
+</style>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
