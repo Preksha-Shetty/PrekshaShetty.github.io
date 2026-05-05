@@ -23,6 +23,20 @@
     background-attachment: scroll !important;
     background-position: center center !important;
   }
+
+  /* Improved text consistency */
+  .posts article p {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .posts article em {
+    line-height: 1.6;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
 </style>
 	</head>
 	<body class="is-preload">
@@ -51,7 +65,7 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="index.html">Projects</a></li>
+							<li class="active"><a href="#main">Projects</a></li>
 							
 						</ul>
 						<ul class="icons">
@@ -69,29 +83,22 @@
 									
 									<h2><a href="#">About Me<br />
 									</a></h2>
-									<p>Hi, I'm Preksha Shetty, a Business Analytics graduate with a
-professional background as a Financial Analyst. Having spent years
-navigating high-stakes market fluctuations. I am currently focused on
-advancing my expertise in data visualization to bridge the gap between
-technical complexity and clear, insightful communication. Beyond the
-data, I like to cook and love experimenting with flavors. I'm also a
-proud cat mom. if I'm not anywhere to be found, I'm likely hanging out
-with my cat.<br /></p>
+									<p>Hi, I'm Preksha Shetty, a Business Analytics graduate with a professional background as a Financial Analyst. Having spent years navigating high-stakes market fluctuations, I am currently focused on advancing my expertise in data visualization to bridge the gap between technical complexity and clear, insightful communication. Beyond the data, I like to cook and love experimenting with flavors. I'm also a proud cat mom. If I'm not anywhere to be found, I'm likely hanging out with my cat.<br /></p>
 								</header>
 								
 								<ul class="actions special">
-									<li><a href="#" class="button large">Projects</a></li>
+									<li><a href="#posts" class="button large">View My Projects</a></li>
 								</ul>
 							</article>
 
 						<!-- Posts -->
-							<section class="posts">
+							<section class="posts" id="posts">
 								<article>
 									<header>
 										<h2><a href="#">Data Cleaning <br />
 										in SQL</a></h2>
 									</header>
-									<p style="text-align: center;"><em>In this project I took a raw housing data and transformed it in SQL Server to make it more usable for analysis.</em></p>
+									<p style="text-align: center;"><em>In this project, I transformed raw housing data in SQL Server to make it analysis-ready. I standardized formats, handled missing values, and created clean datasets optimized for further analysis and reporting.</em></p>
 									<a href="#" class="image fit"><img src="images/housing.jpg" alt="" /></a>
 									
 									<ul class="actions special">
@@ -103,7 +110,7 @@ with my cat.<br /></p>
 										<h2><a href="#">Customer Segmentation <br />
 										& Prediction in Python</a></h2>
 									</header>
-									<p style="text-align: center;"><em>Processed and scaled customer data using Python, applied KMeans clustering to identify 7 behavioral segments, and deployed a live prediction app using Streamlit where you can input customer details and instantly get their segment.</em></p>
+									<p style="text-align: center;"><em>Processed and scaled customer data using Python, applied KMeans clustering to identify 7 behavioral segments, and deployed a live prediction application using Streamlit for real-time customer classification and insights.</em></p>
 									<a href="#" class="image fit"><img src="images/seg.jpg" alt="" /></a>
 									
 									<ul class="actions special">
@@ -114,7 +121,7 @@ with my cat.<br /></p>
 									<header>
 										<h2><a href="#">YumDrop: AI-Native Platform for Ingredient-Based Cooking </a></h2>
 									</header>
-									<p style="text-align: center;"> <em>I developed YumDrop, an AI-powered platform that uses a RAG layer and the Claude API to match sparse pantry ingredients to grounded, non-hallucinated recipes. This functional mobile web prototype solves the "Ingredient-Recipe Gap" by providing real-time conversational guidance and preserving cultural food heritage. </em></p>
+									<p style="text-align: center;"> <em>Developed an AI-powered platform using RAG architecture and the Claude API to intelligently match sparse pantry ingredients to grounded, accurate recipes. Eliminates hallucinations through knowledge base integration.</em></p>
 									<a href="#" class="image fit"><img src="images/yumdrop.jpg" alt="" /></a>
 									<ul class="actions special">
 										<li><a href="https://github.com/Preksha-Shetty/YumDrop" class="button">View Project</a></li>
@@ -125,7 +132,7 @@ with my cat.<br /></p>
 										<h2><a href="#">Currency Forecasting using Python <br />
 										and Machine Learning</a></h2>
 									</header>
-									<p style="text-align: center;"><em>I built this tool to automate live exchange rate ingestion via API and transform raw financial data into insights. Leveraging machine learning (OLS regression), the platform forecasts currency movements to provide data-driven "Buy" or "Wait" recommendations based on 7-day and 15-day price predictions.</em></p>
+									<p style="text-align: center;"><em>Built an automated tool for live exchange rate ingestion via API, transforming raw financial data into predictive insights. Leveraged machine learning (OLS regression, ARIMA) for accurate currency trend forecasting.</em></p>
 									<a href="#" class="image fit"><img src="images/Currency.jpg" alt="" /></a>
 									
 									<ul class="actions special">
@@ -137,7 +144,7 @@ with my cat.<br /></p>
 										<h2><a href="#">NYC Ride-Hailing  <br />
 										Predictive Intelligence</a></h2>
 									</header>
-									<p style="text-align: center;"> <em>I built an XGBoost predictive system to analyze a millions-of-rows NYC ride-hailing dataset, bypassing Excel’s limits. Using Python, I engineered features to predict high-value zones and identify "Supply Deserts" where passenger wait times peak. This project provides data-driven strategies to improve driver pay efficiency and reduce marketplace friction. </em></p>
+									<p style="text-align: center;"> <em>Built an XGBoost predictive system to analyze millions of rows of NYC ride-hailing data, bypassing Excel's limitations. Engineered advanced features for demand forecasting, surge pricing prediction, and driver optimization.</em></p>
 									<a href="#" class="image fit"><img src="images/uber1.jpg" alt="" /></a>
 									
 									<ul class="actions special">
@@ -156,11 +163,11 @@ with my cat.<br /></p>
 							</section>
 							<section>
 								<h3>Phone</h3>
-								<p><a href="#">(716) 717-0824</a></p>
+								<p><a href="tel:+17167170824">(716) 717-0824</a></p>
 							</section>
 							<section>
 								<h3>Email</h3>
-								<p><a href="#">prekshashetty540@gmail.com</a></p>
+								<p><a href="mailto:prekshashetty540@gmail.com">prekshashetty540@gmail.com</a></p>
 							</section>
 							<section>
 								<h3>Social</h3>
@@ -174,7 +181,7 @@ with my cat.<br /></p>
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+						<ul><li>&copy; Preksha Shetty Portfolio</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
 					</div>
 
 			</div>
