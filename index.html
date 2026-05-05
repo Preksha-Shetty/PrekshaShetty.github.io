@@ -37,6 +37,40 @@
     word-wrap: break-word;
     overflow-wrap: break-word;
   }
+
+  /* Center footer contact section */
+  footer .split.contact {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  footer .split.contact section {
+    flex: 0 1 auto;
+    text-align: center;
+  }
+
+  footer .split.contact .alt {
+    flex-basis: 100%;
+  }
+
+  @media (max-width: 1280px) {
+    footer .split.contact {
+      gap: 1.5rem;
+    }
+  }
+
+  @media (max-width: 736px) {
+    footer .split.contact {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    footer .split.contact section {
+      flex-basis: 100%;
+    }
+  }
 </style>
 	</head>
 	<body class="is-preload">
